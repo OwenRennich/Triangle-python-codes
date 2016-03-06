@@ -1,0 +1,43 @@
+#! /usr/bin/python
+
+print('Would you like to find the side lengths of a 30-60-90 triangle or a 45-45-90 triangle?')
+Answer1 = raw_input('Type 369 for a 30-60-90 triangle, and 459 for a 45-45-90 triangle: ')
+if Answer1 == '369':
+	print('Which side do you know?')
+	Answer2 = raw_input('Type SL for short leg, LL for long leg, and H for hypotenuse: ') 
+	if Answer2 == 'SL':
+		Answer3 = raw_input('Insert your short leg length: ')
+		Answer3 = float(Answer3)
+		print('Here is your long leg: ')
+		print(Answer3*(3**0.5))
+		print('Here is your hypotenuse: ')
+		print(Answer3*2)
+	if Answer2 == 'LL':
+		Answer4 = raw_input('Insert your long leg length: ')
+		Answer4 = float(Answer4)
+		Var1 = (Answer4/(3**0.5))
+		print('Here is your short leg:')
+		print(Var1)
+		print('Here is your hypotenuse:')
+		print(Var1 *2)
+	if Answer2 == 'H':
+		Answer5 = raw_input('Insert your Hypotenuse length: ')
+		Answer5 = float(Answer5)
+		Var1 = Answer5/2
+		print('Here is your short leg:')
+		print(Var1)
+		print('Here is your Long leg:')
+		print(Var1*(3**0.5))
+if Answer1 == '459':
+	print('Which side do you know?')
+	Answer6 = raw_input('Type L for a leg, and H for the hypotenuse')
+	if Answer6 == 'L':
+		Answer7 = raw_input('Type your leg length')
+		Answer7 = float(Answer7)
+		print('Here is your hypotenuse length:')
+		print(Answer7 * (2**0.5))
+	if Answer6 == 'H':
+		Answer8 = raw_input('Type your hypotenuse')
+		Answer8 = float(Answer8)
+		print('Here is your Leg length:')
+		print(Answer8/(2**0.5))	
